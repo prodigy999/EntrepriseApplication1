@@ -7,6 +7,7 @@
     <head>
         <script src="http://maps.googleapis.com/maps/api/js?key=AIzaSyBeiB8cFZ4OfoOXsc9PXNXnSzlrQKf1XKI&signed_in=true&callback=initMap"></script>
         <script src="<spring:url value="/JS/jemacarse.js"/>"></script>
+        <link href="CSS/cssb.css" rel="stylesheet" type="text/css"/>
     </head>
     <body onload = "loadMap()">
         <div class="menu">
