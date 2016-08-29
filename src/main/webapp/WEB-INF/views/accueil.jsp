@@ -14,9 +14,6 @@
         <div class="titre">
             <c:import url="_TITRE.jsp"/>
         </div>
-        <div class="menu">
-            <c:import url="_MENU.jsp"/>
-        </div>
         <div class="contenu">
             <div class="inscription">
                 <h1>Inscription</h1>
@@ -44,6 +41,7 @@
                     <br />
                     <form:radiobuttons path="rolePersonne" items="${rolePersonne}"></form:radiobuttons>
                     <input type="submit" value="OK"/>
+                    </div>
                 </form:form>
                 <div class="connexion">
                     <h2>Log in</h2>
@@ -57,7 +55,6 @@
                         <input type="submit" value="OK"/>
                     </form:form>
                 </div>
-            </div>
         </div>
         <div class="pied">
             <c:import url="_PIED.jsp"/>

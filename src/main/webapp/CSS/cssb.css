@@ -1,31 +1,34 @@
-
+#menu_horizontal{
+    margin-bottom: 0px;
+    height : 50px;
+}
 
 ul#menu_horizontal { 
     width : 100%; 
-    height : 50px;
-    padding : 0;
-    background-image: url("PNG/BAR_MENU.png");
-    background-repeat: repeat-x;
-    background-size: auto;
+    background-image: url("PNG/barre.jpg");
+    background-color: #BDBDBD;
     list-style-type : none; 
+    color : white;
 }
 
 ul#menu_horizontal li {
     padding : 0 0.5em;  
-    line-height : 30px;
+    line-height : 40px;
     float : right;
 }
 
 ul#menu_horizontal li.bouton_gauche {
-    float : left;
+    float : right;
+    color : white;
 }
 
 ul#menu_horizontal li.bouton_droite {
     float : right;
+    color : white;
 }
 
 ul#menu_horizontal a {
-    color : black;
+    color : white;
     text-decoration : none;
     padding : 0 0.5em; 
     font :  0.8em "Trebuchet MS";
@@ -34,5 +37,4 @@ ul#menu_horizontal a:hover { text-decoration : underline; }
 
 ul#menu_horizontal a img { 
     border : none;
-    padding :  0 0.3em;
 }

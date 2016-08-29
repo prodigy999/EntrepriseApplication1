@@ -1,12 +1,12 @@
 .titre {
-    color: graytext;
+    color: white;
     font-size: 60px;
-    
+    text-align:center;
 }
 
 body {
     color:graytext;
-    background-color:white;
+    background-color:grey;
     background-image:url("PNG/FOND_ECRAN.jpg");
     background-size: auto;
     align-content: center;
@@ -14,24 +14,28 @@ body {
 
 .global {
     position: relative;
-    
 }
 
 .inscription {
-    width: auto;
+    width: 500px;
+    left: 30%;
     position:relative;
-    
-    
-    
+    background-color:white;
+    opacity: 0.7;
+    padding:20px;
+    text-align: center;
+
 }
 
 .connexion {
-    position: relative;
     width: auto;
     position:absolute;
-    top:50px;
-    left:400px;
-    
+    top:86px;
+    left:1080px;
+    background-color:white;
+    opacity: 0.7;
+    padding:20px;
+    text-align: center;
 }
 
 .pied {
