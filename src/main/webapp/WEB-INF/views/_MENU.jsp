@@ -1,13 +1,18 @@
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
+<ul id="menu_horizontal">
+    <c:choose>
+        <c:when test="${connecte==null}">
+            Veuillez vous connecter ou vous inscrire
+            </c:when>
+            <c:otherwise>
+                <c:import url="_TITRE.jsp"/>
+                Bonjour ${connecte.login}
+                <li><a href="accueil">Accueil</a></li>
+                <li><a href="historique">Historique</a></li>
+                <li><a href="geolocalisation">Commander une course</a></li>
+                <li><a href="deconnexion">Deconnexion</a></li>
+            </c:otherwise>
+        </c:choose>
 
-<script src="../../JS/jemacarse.js" type="text/javascript"></script>
-<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-<link href="../../CSS/cssb.css" rel="stylesheet" type="text/css"/>
-
-    <ul id="menu_horizontal">
-        <li><a href="accueil">Connexion</a></li>
-        <li><a href="accueil">Deconnexion</a></li>
-        <li><a href="historique">Historique</a></li>
-        <li><a href=""onclick="javascript:boited()">Commander une course</a></li>
-    </ul>
+</ul>

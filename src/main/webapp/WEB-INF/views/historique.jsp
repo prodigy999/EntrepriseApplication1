@@ -1,22 +1,24 @@
-<%@page contentType="text/html" pageEncoding="UTF-8"%>
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <%@ taglib prefix="form" uri="http://www.springframework.org/tags/form" %>
 <%@ taglib prefix="spring" uri="http://www.springframework.org/tags" %>
+<%@page contentType="text/html" pageEncoding="UTF-8"%>
 <!DOCTYPE html>
 <html>
     <head>
-        <script src="http://maps.googleapis.com/maps/api/js?key=AIzaSyBeiB8cFZ4OfoOXsc9PXNXnSzlrQKf1XKI&signed_in=true&callback=initMap"></script>
-        <script src="<spring:url value="/JS/jemacarse.js"/>"></script>
-        <link href="CSS/cssb.css" rel="stylesheet" type="text/css"/>
+        <link href="CSS/csspp.css" rel="stylesheet" type="text/css"/>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
         <title>Jemacarse, Vite fait, Bien fait !!</title>
-        <c:import url="_STYLESHEET.jsp"/> 
+        <c:import url="_STYLESHEET.jsp"/>
     </head>
-    <body onload = "loadMap()">
+    <body>
+        <div class="titre">
+            <c:import url="_TITRE.jsp"/>
+        </div>
         <div class="menu">
             <c:import url="_MENU.jsp"/>
         </div>
         <div class="contenu">
-            <div id = "sample" style = "width:100%; height:900px;"></div>
+            
         </div>
         <div class="pied">
             <c:import url="_PIED.jsp"/>
