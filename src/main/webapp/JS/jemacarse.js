@@ -11,7 +11,7 @@ function loadMap() {
         overviewMapControl: false,
         rotateControl: false
     }
-    
+
     var map = new google.maps.Map(document.getElementById("sample"), mapOptions);
 
     var infoWindow = new google.maps.InfoWindow({map: map});
@@ -43,43 +43,48 @@ function loadMap() {
     }
 
 
-function erreurLocalisation(browserHasGeolocation, infoWindow, pos) {
-    infoWindow.setPosition(pos);
-    infoWindow.setContent(browserHasGeolocation ?
-            'Erreur: La geolocalisation à échoué.' :
-            'Erreur: Votre navigateur ne supporte pas la géolocalisation');
-}
+    function erreurLocalisation(browserHasGeolocation, infoWindow, pos) {
+        infoWindow.setPosition(pos);
+        infoWindow.setContent(browserHasGeolocation ?
+                'Erreur: La geolocalisation à échoué.' :
+                'Erreur: Votre navigateur ne supporte pas la géolocalisation');
+    }
 
     var panel;
     var initialize;
-    
-    var direction;
-    
-    
-    direction = new google.maps.DirectionsRenderer({
-    map   : map, 
-    panel : panel 
-    });
-    
-function calcul(){
-    origin      = pos;
-    destination = document.getElementById('destination').value;
-    console.log(pos);
-    console.log(destination)
-    
-    if(origin && destination){
-        var request = {
-            origin      : origin,
-            destination : destination,
-            travelMode  : google.maps.DirectionsTravelMode.DRIVING 
-        }
-        var directionsService = new google.maps.DirectionsService(); 
-        directionsService.route(request, function(response, status){ 
-            if(status == google.maps.DirectionsStatus.OK){
-                direction.setDirections(response); 
-            }
-        });
-    } 
-};
 
+    var direction;
+
+
+    direction = new google.maps.DirectionsRenderer({
+        map: map,
+        panel: panel
+    });
+
+    function calcul() {
+        origin = pos;
+        destination = document.getElementById('destination').value;
+        console.log(pos);
+        console.log(destination)
+
+        if (origin && destination) {
+            var request = {
+                origin: origin,
+                destination: destination,
+                travelMode: google.maps.DirectionsTravelMode.DRIVING
+            }
+            var directionsService = new google.maps.DirectionsService();
+            directionsService.route(request, function (response, status) {
+                if (status == google.maps.DirectionsStatus.OK) {
+                    direction.setDirections(response);
+                }
+            });
+        }
+    }
+    ;
+
+}
+
+function boited() {
+    var destination = prompt("Entrez votre destination");
 }

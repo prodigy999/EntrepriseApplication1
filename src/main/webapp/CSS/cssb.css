@@ -14,7 +14,7 @@ ul#menu_horizontal {
 ul#menu_horizontal li {
     padding : 0 0.5em;  
     line-height : 30px;
-
+    float : right;
 }
 
 ul#menu_horizontal li.bouton_gauche {
