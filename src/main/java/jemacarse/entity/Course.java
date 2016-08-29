@@ -27,8 +27,9 @@ public class Course implements Serializable {
     private Long id;
 
     private String commentaireChauffeur, commentaireClient;
-    private double idClient, idChauffeur, montant, distance, noteChauffeur, noteClient;
+    private double montant, distance, noteChauffeur, noteClient;
     private double posDepartClient [][], posDepartChauffeur [][], posArrivee [][];
+    private Integer idClient, idChauffeur;
     
     @Temporal(TemporalType.TIMESTAMP)
     private Date dateCourse;
@@ -68,19 +69,19 @@ public class Course implements Serializable {
         this.commentaireClient = commentaireClient;
     }
 
-    public double getIdClient() {
+    public Integer getIdClient() {
         return idClient;
     }
 
-    public void setIdClient(double idClient) {
+    public void setIdClient(Integer idClient) {
         this.idClient = idClient;
     }
 
-    public double getIdChauffeur() {
+    public Integer getIdChauffeur() {
         return idChauffeur;
     }
 
-    public void setIdChauffeur(double idChauffeur) {
+    public void setIdChauffeur(Integer idChauffeur) {
         this.idChauffeur = idChauffeur;
     }
 

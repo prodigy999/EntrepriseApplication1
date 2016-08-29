@@ -25,7 +25,7 @@ public class Personne implements Serializable {
     private Long id;
     
     private String login, motDePasse, motDePasse2, nom, prenom, adresse, mail;
-    private double NoteGlobale;
+    private double noteGlobale;
     
     @Enumerated(EnumType.STRING)
     private RolePersonne rolePersonne;
@@ -35,6 +35,14 @@ public class Personne implements Serializable {
     
     @OneToMany(mappedBy = "personne")
     private List<Vehicule> vehicules = new ArrayList<>();
+
+    public double getNoteGlobale() {
+        return noteGlobale;
+    }
+
+    public void setNoteGlobale(double noteGlobale) {
+        this.noteGlobale = noteGlobale;
+    }
 
     public String getMotDePasse2() {
         return motDePasse2;
@@ -115,15 +123,7 @@ public class Personne implements Serializable {
     public void setAdresse(String adresse) {
         this.adresse = adresse;
     }
-
-    public double getNoteGlobale() {
-        return NoteGlobale;
-    }
-
-    public void setNoteGlobale(double NoteGlobale) {
-        this.NoteGlobale = NoteGlobale;
-    }
-
+    
     public Long getId() {
         return id;
     }
