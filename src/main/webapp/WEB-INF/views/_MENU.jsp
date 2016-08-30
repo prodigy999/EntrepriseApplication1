@@ -7,13 +7,12 @@
             Veuillez vous connecter ou vous inscrire
         </c:when>
         <c:otherwise>
-            <c:import url="_TITRE.jsp"/>
-            <li><a href="accueil">Accueil</a></li>
-            <li><a href="historique"><img src="PNG/HISTORIQUE.PNG" width="40" alt=""/></a></li>
-            <li><img src="PNG/LOGO.png" width="50" alt="" onclick="boited();" /></li>
-            <li><a href="deconnexion"><img src="PNG/GNOME.png" alt=""/></a></li>
+            <label>Jemacarse Vite fait, bien fait !!</label>
+            <li><a href="historique"><img src="PNG/HISTORIQUE.PNG" width="45" alt=""/></a></li>
+            <li><a href="itineraire"><img src="PNG/LOGOCLIENT.png" width="70" alt=""/></a></li>
+            <li><a href="deconnexion"><img src="PNG/GNOME.png" width="35" alt=""/></a></li>
             <li>Bonjour ${connecte.login}</li>
+            <li><a href="geolocalisation">Accueil</a></li>
             </c:otherwise>
         </c:choose>
-            
 </ul>

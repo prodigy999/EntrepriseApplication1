@@ -5,8 +5,8 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <script src="http://maps.googleapis.com/maps/api/js?key=AIzaSyBeiB8cFZ4OfoOXsc9PXNXnSzlrQKf1XKI&signed_in=true&callback=initMap"></script>
-        <script src="<spring:url value="/JS/jemacarse.js"/>"></script>
+        <script src="http://maps.googleapis.com/maps/api/js?key=AIzaSyBeiB8cFZ4OfoOXsc9PXNXnSzlrQKf1XKI&language=fr"></script>
+        <script src="<spring:url value="JS/jemacarse.js"/>"></script>
         <link href="CSS/cssb.css" rel="stylesheet" type="text/css"/>
         <title>Jemacarse, Vite fait, Bien fait !!</title>
         <c:import url="_STYLESHEET.jsp"/> 

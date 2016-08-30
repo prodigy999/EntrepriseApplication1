@@ -6,14 +6,12 @@
 <html>
     <head>
         <link href="CSS/csspp.css" rel="stylesheet" type="text/css"/>
+        <link href="CSS/cssb.css" rel="stylesheet" type="text/css"/>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
         <title>Jemacarse, Vite fait, Bien fait !!</title>
         <c:import url="_STYLESHEET.jsp"/>
     </head>
     <body>
-        <div class="titre">
-            <c:import url="_TITRE.jsp"/>
-        </div>
         <div class="menu">
             <c:import url="_MENU.jsp"/>
         </div>
