@@ -25,7 +25,7 @@ public class PersonneController {
     @Autowired
     private CourseCrudService courseCrudService;
 
-    @RequestMapping(value = "/deconnexion", method = RequestMethod.GET)
+    @RequestMapping(value = "/deconnexion", method = RequestMethod.GET) //------------------------------------------------- Deconnexion
     public String deconnexion(HttpSession session) {
 
         session.invalidate();
@@ -33,7 +33,7 @@ public class PersonneController {
         return "redirect:/accueil";
     }
     
-    @RequestMapping(value = "/connexion", method = RequestMethod.POST)
+    @RequestMapping(value = "/connexion", method = RequestMethod.POST) //---------------------------------------------------- Connexion
     public String connexionPOST(@ModelAttribute("connexion") Personne p, HttpSession session) {
 
         Personne personneTrouvee = personneCrudService.findOneByLoginAndMotDePasse(p.getLogin(), p.getMotDePasse());
@@ -45,7 +45,7 @@ public class PersonneController {
         return "redirect:/accueil";
     }
 
-    @RequestMapping(value = "/accueil", method = RequestMethod.GET)
+    @RequestMapping(value = "/accueil", method = RequestMethod.GET) //--------------------------------------------------------- Accueil
     public String accueil(Model m, HttpSession session) {
         
         Personne p = new Personne();
@@ -57,7 +57,7 @@ public class PersonneController {
         return "accueil";
     }
 
-    @RequestMapping(value = "/inscription", method = RequestMethod.POST)
+    @RequestMapping(value = "/inscription", method = RequestMethod.POST) //------------------------------------------------- Inscription
     public String inscriptionPost(@ModelAttribute("inscription") Personne p) {
 
         if (p.getMotDePasse().equals(p.getMotDePasse2())){
@@ -66,7 +66,7 @@ public class PersonneController {
             return "redirect:/accueil";
     }
 
-    @RequestMapping(value = "/historique", method = RequestMethod.GET)
+    @RequestMapping(value = "/historique", method = RequestMethod.GET) //---------------------------------------------------- Historique
     public String afficheHistorique(Model m, HttpSession session) {
         
         Personne p = new Personne();
@@ -83,7 +83,7 @@ public class PersonneController {
         return "historique";
     }
     
-    @RequestMapping(value = "/detailCourse/{idCourse}", method = RequestMethod.GET)
+    @RequestMapping(value = "/detailCourse/{idCourse}", method = RequestMethod.GET)//--------------------------------- Detail d'une course
     public String detailCourse (Model m, @PathVariable ("idCourse") long id){
         
         Course c = new Course();
