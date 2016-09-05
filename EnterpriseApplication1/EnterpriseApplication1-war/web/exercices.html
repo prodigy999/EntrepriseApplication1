@@ -1,0 +1,50 @@
+<html>
+    <head>
+        <title>TODO supply a title</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script type="text/javascript" src=JS/exercices.js></script>
+    </head>
+    <body>
+        <table id="puzzle">
+            <tr>
+                <td id="00" draggable="true" ondragstart="drag(event)"></td>
+                <td id="01" draggable="true" ondragstart="drag(event)"></td>
+                <td id="02" draggable="true" ondragstart="drag(event)"></td> 
+                <td id="03" draggable="true" ondragstart="drag(event)"></td>
+                <td id="04" draggable="true" ondragstart="drag(event)"></td> 
+            </tr>
+            <tr>
+                <td id="10" draggable="true" ondragstart="drag(event)"></td>
+                <td id="11" draggable="true" ondragstart="drag(event)"></td>
+                <td id="12" draggable="true" ondragstart="drag(event)"></td> 
+                <td id="13" draggable="true" ondragstart="drag(event)"></td>
+                <td id="14" draggable="true" ondragstart="drag(event)"></td> 
+            </tr>
+            <tr>
+                <td id="20" draggable="true" ondragstart="drag(event)"></td>
+                <td id="21" draggable="true" ondragstart="drag(event)"></td>
+                <td id="22" draggable="true" ondragstart="drag(event)"></td> 
+                <td id="23" draggable="true" ondragstart="drag(event)"></td>
+                <td id="24" draggable="true" ondragstart="drag(event)"></td> 
+            </tr>
+            <tr>
+                <td id="30" draggable="true" ondragstart="drag(event)"></td>
+                <td id="31" draggable="true" ondragstart="drag(event)"></td>
+                <td id="32" draggable="true" ondragstart="drag(event)"></td> 
+                <td id="33" draggable="true" ondragstart="drag(event)"></td>
+                <td id="34" draggable="true" ondragstart="drag(event)"></td> 
+            </tr>
+            <tr>
+                <td id="40" draggable="true" ondragstart="drag(event)"></td>
+                <td id="41" draggable="true" ondragstart="drag(event)"></td>
+                <td id="42" draggable="true" ondragstart="drag(event)"></td> 
+                <td id="43" draggable="true" ondragstart="drag(event)"></td>
+                <td id="44" draggable="true" ondragstart="drag(event)"></td>
+            </tr>
+        </table>
+        <input type="button" value="generer" onclick="genererImage(solution);">
+        <input type="button" value="melanger" onclick="melanger();">
+        <input type="button" value="verifier" onclick="verifier();">
+    </body>
+</html>

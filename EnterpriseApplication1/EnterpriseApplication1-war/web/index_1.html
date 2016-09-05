@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>TODO supply a title</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script type="text/javascript" src=JS/main.js></script>
+    </head>
+    <body>
+        <div>
+            <h1>Titre du paragraphe</h1>
+            <p id="paraph">je suis un <a href="#" onclick="color();">texte</a> de test pour mon <strong>paragraphe</strong></p>
+            <table id="tableau" >
+                <tr>
+                    <td>ligne 1</td>
+                    <td>ligne 2</td>
+                </tr>
+            </table>
+            <input type="button" value="Generer tableau" onclick="nouveauNombre();">
+        </div>
+        <div>
+            <table id="nouvTableau">
+            </table>
+            <input id="resultat" type="text">
+            <input type="button" value="Jouer" onclick="random();">
+        </div>
+        <div>
+            <select id="listOption">
+                <option>USA</option>
+                <option>UK</option>
+                <option>FR</option>
+                <option>GER</option>
+                <option>BE</option>
+            </select>
+            <input type="button" value="Supprimer" onclick="supprimerOption();">
+        </div>
+        <div id="image"></div> 
+        <input type="button" value="changer" onclick="afficherImages();">
+    </body>
+</html>
